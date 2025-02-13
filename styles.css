@@ -21,6 +21,21 @@ body {
     }
  }
 
+ @keyframes moveheart-cloud {
+    0%{
+       transform: translate(30px, 0px);
+    }
+    25%{
+       transform: translate(60px, 0px); 
+    }
+    75%{
+        transform: translate(30px,0px);
+    }
+    100%{
+       transform: translate(0px,0px);
+    }
+ }
+
 #balloon {
     position: absolute;
     top: -10%;
@@ -75,11 +90,13 @@ body {
     z-index: 3;
     top: 5%;
     left: 60%;
+    animation: moveheart-cloud 30s 1s;
 }
 
 #heart-cloud img {
     width: 20%;
     height: 20%;
+    animation: moveheart-cloud 30s 1s;
 }
 
 #proposal { 
