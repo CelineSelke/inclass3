@@ -84,11 +84,11 @@ body {
 
 #proposal { 
     position: absolute;
-    left: 60%; 
+    left: 57%; 
     top: 70%;
 }
 
 #proposal img { 
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
