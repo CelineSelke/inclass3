@@ -1,9 +1,9 @@
-.scene {
-    background-image: url('./images/park.png');
-    background-position: center;
+body {
+    background-image: url('./images/park.jpg');
     background-size: cover;
-    background-repeat:repeat-x;
-    height:100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes moveBalloon {
@@ -21,7 +21,7 @@
     }
  }
 
-.balloon {
+#balloon {
     position: absolute;
     top: -10%;
     left: 60%;
@@ -29,37 +29,66 @@
     animation: moveBalloon 30s 1s;
 }
 
-.flowers {
+#balloon img {
+    height: 50%;
+    width: 50%;
+    animation: moveBalloon 30s 1s;
+
+}
+
+#flowers {
     position: absolute;
     bottom: 5%;
-    left: 55%;
-    height: 5%;
-    width: 5%;
+    left: 40%;
 }
 
-.squirrels {
+#flowers img {
+    height: 50%;
+    width: 50%;
+}
+
+#squirrels {
     position: absolute;
     left: 10%;
-    top: 50%;
-    width: 5%;
-    height: 5%;
+    top: 66%;
+    z-index: 5;
 }
 
-.picnic { 
+#squirrels img {
+    width: 10%;
+    height: 10%;
+}
+
+#picnic { 
     position: absolute;
     left: 5%;
     top: 75%;
 }
 
-.heart-cloud {   
+#picnic img {
+    width: 30%;
+    height: 30%;
+}
+
+#heart-cloud {   
     position: absolute;
     z-index: 3;
     top: 5%;
-    left: 70%;
+    left: 60%;
 }
 
-.proposal { 
+#heart-cloud img {
+    width: 20%;
+    height: 20%;
+}
+
+#proposal { 
     position: absolute;
     left: 60%; 
     top: 70%;
+}
+
+#proposal img { 
+    width: 50%;
+    height: 50%;
 }
